@@ -1,5 +1,6 @@
 BreakLoop := 0
 
+;engage loop
 ^Esc::
 while (BreakLoop = 0)
 {
@@ -12,15 +13,15 @@ while (BreakLoop = 0)
     ;Sleep, 10
     Click
 }
-Send, 3
 BreakLoop := 0
 return
 
+;exit loop
 ^Tab::
 BreakLoop := 1
 return
 
-;bean
+;b e a n
 F8::
 Gosub, ^Tab
 Send, 9
@@ -28,7 +29,7 @@ Click, Right
 Gosub, ^Esc
 return
 
-;restart
+;restart script
 ^F12::
 Reload
 Sleep, 1000
