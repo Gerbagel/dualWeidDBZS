@@ -1,5 +1,13 @@
 BreakLoop := 0
 
+MsgBox, 
+    (
+    Ctrl + Esc: Start script 
+    Ctrl + Tab: Stop script 
+    F8: Use bean 
+    Ctrl + F12: Restart script
+    )
+
 ;engage loop
 ^Esc::
 while (BreakLoop = 0)
